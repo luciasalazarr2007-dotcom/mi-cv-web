@@ -1,56 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Lucía Salazar</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>    
     <div class="container">
-      <div class="header">
+      <header class="header">
         <div class="img-area">
-            <img src="imagen.jpeg" alt="Imagen">
+            <img src="imagen.jpeg" alt="Lucía Salazar">
         </div>
-        <h1>Lucía Salazar</h1>
-        <h3>Administradora de Sistemas y Redes</h3>
-      </div>
+        <div class="header-info">
+            <h1>Lucía Salazar</h1>
+            <h3>Administradora de Sistemas y Redes</h3>
+            <p>📍 Córdoba, España | 📞 +34 605 31 47 12</p>
+            <p>📧 luciasalazarr2007@gmail.com</p>
+        </div>
+      </header>
 
-      <div class="main">
-        <div class="left">
-          <h2>Información Personal</h2>
-          <p><strong>Nombre:</strong> Lucía Salazar Rodíguez</p>
-          <p><strong>Años:</strong> 18</p>
-          <p><strong>Email:</strong> luciasalazarr2007@gmail.com</p>
-          <p><strong>Teléfono:</strong>+34 605 31 47 12</p>
-          <h2>Experiencia</h2>
-          <ul>
-            <li>HTML/CSS</li>
-            <li>VirtualBox</li>
-            <li>Packet Tracert</li>
-            <li>Wordpress</li>
-            <li>AWS</li>
-          </ul>
-          <h2>Formación</h2>
-          <h3>Grado Superior ASIR</h3>
-          <p>Actualmente | IES Gran Capitán</p> <br>
-          <h3>Grado Medio SMR</h3>
-          <p>2023-2025 | IES Medina Azahara</p>
-        </div>
+      <div class="main-layout">
+        <section class="content-section">
+          <article>
+            <h2>Sobre mí</h2>
+            <p>Técnica en Sistemas Microinformáticos y Redes con especial interés en la administración de infraestructuras cloud y el desarrollo web profesional.</p>
+          </article>
+
+          <article>
+            <h2>Experiencia Laboral</h2>
+            <div class="item">
+              <h3>Prácticas Grado Superior - WeAI</h3>
+              <p class="date">Actualmente</p>
+              <p>Gestión y desarrollo de landings corporativas y soporte en administración de sistemas.</p>
+            </div>
+            <div class="item">
+              <h3>Prácticas Grado Medio - C.E.PER Occidente</h3>
+              <p class="date">2023 - 2025</p>
+              <p>Desarrollo y mantenimiento de página web institucional utilizando WordPress.</p>
+            </div>
+          </article>
+
+          <article>
+            <h2>Formación Académica</h2>
+            <div class="item">
+              <h3>Grado Superior ASIR</h3>
+              <p>IES Gran Capitán | En curso</p>
+            </div>
+            <div class="item">
+              <h3>Grado Medio SMR</h3>
+              <p>IES Medina Azahara | 2023-2025</p>
+            </div>
+          </article>
+        </section>
         
-        <div class="right">
-          <h2>Experiencia Laboral</h2>
-          <h3>Prácticas Grado Medio</h3>
-          <p><strong>Función:</strong> Desarrollo pagina web en Wordpress</p>
-          <p><strong>Lugar:</strong> C.E.PER Occidente</p>
-          <br>
-          <h3>Prácticas Grado Superior</h3>
-          <p><strong>Función:</strong> Gestión y desarrollo de landings</p>
-          <p><strong>Lugar:</strong> WeAI</p>
-        </div>
-      </div>
-    </div> 
+        <aside class="sidebar">
+          <h2>Habilidades</h2>
+          <ul>
+            <li>HTML5 / CSS3</li>
+            <li>Cisco Packet Tracer</li>
+            <li>VirtualBox & AWS</li>
+            <li>WordPress</li>
+            <li>Gestión de Sistemas Linux</li>
+          </ul>
 
+          <h2>Idiomas</h2>
+          <ul>
+            <li>Español: Nativo</li>
+            <li>Inglés: Nivel B2</li>
+          </ul>
+        </aside>
+      </div>
+
+      <footer class="footer">
+        <a href="#" target="_blank">LinkedIn</a>
+        <a href="#" target="_blank">Portfolio Profesional</a>
+      </footer>
+    </div> 
 </body>
 </html>
