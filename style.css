@@ -6,35 +6,36 @@
 }
 
 body {
-    background: #e0e0e0;
-    color: #333;
-    line-height: 1.6;
+    background: #f0f2f5;
+    padding: 20px;
 }
 
 .container {
     background: #fff;
     max-width: 900px;
-    margin: 40px auto;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    margin: 20px auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
     overflow: hidden;
 }
 
-/* Header */
-.header {
+/* Header Estilo Horizontal */
+.cv-header {
     background: #00b6c4;
     color: white;
-    padding: 40px;
-    text-align: center;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
 .img-area {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     overflow: hidden;
-    margin: 0 auto 20px;
-    border: 5px solid #fff;
+    border: 4px solid #fff;
+    flex-shrink: 0;
 }
 
 .img-area img {
@@ -43,94 +44,80 @@ body {
     object-fit: cover;
 }
 
-/* Layout */
-.main-layout {
+.header-text h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+/* Distribución del Cuerpo */
+.main-content {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
 }
 
-.content-section {
+.info-primary {
     flex: 2;
-    padding: 20px;
+    padding: 30px;
 }
 
-.sidebar {
+.info-secondary {
     flex: 1;
-    background: #f9f9f9;
-    padding: 20px;
+    background: #fafafa;
+    padding: 30px;
     border-left: 1px solid #eee;
 }
 
-/* Tipografía */
+/* Elementos comunes */
 h2 {
     color: #00b6c4;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    margin: 25px 0 15px;
-    border-bottom: 2px solid #00b6c4;
-    padding-bottom: 5px;
-}
-
-.item {
-    margin-bottom: 20px;
-}
-
-.item h3 {
     font-size: 1.1rem;
-    color: #2c3e50;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #00b6c4;
+    display: inline-block;
+    padding-bottom: 3px;
 }
 
-.date {
-    font-size: 0.9rem;
-    color: #00b6c4;
-    font-weight: 600;
+.block, .job, .edu {
+    margin-bottom: 25px;
 }
 
-ul {
+.info-secondary ul {
     list-style: none;
 }
 
-.sidebar ul li {
-    background: #fff;
+.info-secondary ul li {
     margin-bottom: 10px;
-    padding: 8px 12px;
-    border-radius: 4px;
+    padding: 5px 0;
+    border-bottom: 1px solid #e0e0e0;
     font-size: 0.9rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 /* Footer */
-.footer {
+.cv-footer {
     background: #2c3e50;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
 }
 
-.footer a {
+.cv-footer a {
     color: #fff;
     text-decoration: none;
     margin: 0 15px;
-    font-weight: 500;
     font-size: 0.9rem;
 }
 
-.footer a:hover {
-    color: #00b6c4;
-}
-
-/* Responsividad */
-@media (max-width: 768px) {
-    .main-layout {
+/* Responsive móvil */
+@media screen and (max-width: 600px) {
+    .cv-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .main-content {
         flex-direction: column;
     }
-    
-    .sidebar {
+    .info-secondary {
         border-left: none;
         border-top: 1px solid #eee;
-    }
-    
-    .container {
-        margin: 0;
     }
 }
