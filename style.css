@@ -6,35 +6,42 @@
 }
 
 body {
-    background: #f0f2f5;
+    background: #00b6c4; /* Mantengo tu color de fondo original */
     padding: 20px;
+    color: #333;
 }
 
 .container {
-    background: #fff;
+    background: #f5f5f5;
     max-width: 900px;
-    margin: 20px auto;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    border-radius: 10px;
-    overflow: hidden;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: 1fr 300px; /* Distribución principal y lateral */
+    gap: 0;
 }
 
-/* Header Estilo Horizontal */
-.cv-header {
-    background: #00b6c4;
-    color: white;
-    padding: 30px;
+/* Header a ancho completo */
+.main-header {
+    grid-column: 1 / span 2;
+    background: white;
+    padding: 40px;
+    border-bottom: 5px solid #00b6c4;
+}
+
+.profile-box {
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
 .img-area {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     overflow: hidden;
-    border: 4px solid #fff;
+    border: 8px groove #00b6c4; /* Siguiendo tu estilo original de borde */
     flex-shrink: 0;
 }
 
@@ -44,80 +51,107 @@ body {
     object-fit: cover;
 }
 
-.header-text h1 {
-    font-size: 2rem;
-    margin-bottom: 5px;
+.intro h1 {
+    font-size: 2.2rem;
+    color: #222;
 }
 
-/* Distribución del Cuerpo */
-.main-content {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.info-primary {
-    flex: 2;
-    padding: 30px;
-}
-
-.info-secondary {
-    flex: 1;
-    background: #fafafa;
-    padding: 30px;
-    border-left: 1px solid #eee;
-}
-
-/* Elementos comunes */
-h2 {
+.tagline {
     color: #00b6c4;
-    font-size: 1.1rem;
+    font-weight: 600;
     text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.contact-bar span {
+    margin-right: 20px;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+/* Estilo de Tarjetas */
+.card {
+    background: white;
+    margin: 20px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+h2 {
+    background: #00b6c4;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    border-radius: 0 50px 50px 0;
+    margin-left: -25px; /* Saca el título un poco de la tarjeta */
+}
+
+/* Contenido Principal e items */
+.main-content {
+    padding-bottom: 20px;
+}
+
+.job-item, .edu-item {
     margin-bottom: 15px;
-    border-bottom: 2px solid #00b6c4;
-    display: inline-block;
-    padding-bottom: 3px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
 }
 
-.block, .job, .edu {
-    margin-bottom: 25px;
+.job-item:last-child, .edu-item:last-child { border: none; }
+
+/* Lateral */
+.complementary-info {
+    background: #ececec;
 }
 
-.info-secondary ul {
+.skill-list {
     list-style: none;
 }
 
-.info-secondary ul li {
-    margin-bottom: 10px;
-    padding: 5px 0;
-    border-bottom: 1px solid #e0e0e0;
-    font-size: 0.9rem;
+.skill-list li {
+    background: #00b6c4;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+    display: inline-block;
+    margin-right: 5px;
 }
 
 /* Footer */
-.cv-footer {
-    background: #2c3e50;
-    padding: 15px;
+.main-footer {
+    grid-column: 1 / span 2;
+    background: #222;
+    color: white;
+    padding: 30px;
     text-align: center;
 }
 
-.cv-footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 0.9rem;
+.social-links {
+    margin-bottom: 10px;
 }
 
-/* Responsive móvil */
-@media screen and (max-width: 600px) {
-    .cv-header {
+.social-links a {
+    color: #00b6c4;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media screen and (max-width: 850px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .main-header, .main-footer, .complementary-info {
+        grid-column: 1;
+    }
+    .profile-box {
         flex-direction: column;
         text-align: center;
-    }
-    .main-content {
-        flex-direction: column;
-    }
-    .info-secondary {
-        border-left: none;
-        border-top: 1px solid #eee;
     }
 }
