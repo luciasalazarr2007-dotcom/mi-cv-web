@@ -316,7 +316,7 @@ body.cambio-color .job-item p {
     color: #94a3b8;
 }
 .badge-date {
-    align-self: flex-start; /* Hace que no ocupe todo el ancho */
+    align-self: flex-start;
     background: #e6f8fa;
     color: #008b96;
     padding: 4px 12px;
