@@ -5,21 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Lucía Salazar</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>    
     <div class="container">
       <header class="main-header">
+        <button id="theme-toggle" class="btn-theme">Modo oscuro</button>
+        
         <div class="profile-box">
             <div class="img-area">
-                <img src="imagen.jpeg" alt="Lucía Salazar">
+                <img src="foto_curriculum.jpg" alt="Lucía Salazar">
             </div>
             <div class="intro">
                 <h1>Lucía Salazar Rodríguez</h1>
                 <p class="tagline">Administradora de Sistemas y Redes</p>
                 <div class="contact-bar">
-                    <span>📧 luciasalazarr2007@gmail.com</span>
-                    <span>📞 +34 605 31 47 12</span>
+                    <span><i class="fa-solid fa-envelope"></i> luciasalazarr2007@gmail.com</span>
+                    <span><i class="fa-solid fa-phone"></i> +34 605 31 47 12</span>
                 </div>
             </div>
         </div>
@@ -28,30 +31,34 @@
       <section class="main-content">
         <article class="card">
           <h2>Sobre mí</h2>
-          <p>Técnica en Sistemas con 18 años, actualmente cursando el Grado Superior de ASIR. Especializada en despliegue de soluciones web y gestión de infraestructuras de red.</p>
+          <p>Me considero una persona responsable, que aprende rápido y que siempre está dispuesta a ayudar en lo que haga falta. Mi objetivo es aprovechar las oportunidades al máximo para aprender conocimientos nuevos y demostrar mi compromiso y ganas de trabajar.</p>
         </article>
 
         <article class="card">
           <h2>Experiencia Laboral</h2>
-          <div class="job-item">
-            <h3>WeAI</h3>
-            <p class="role">Gestión y desarrollo de landings profesionales.</p>
+          <div class="edu-item">
+              <h3>WeAI</h3>
+              <p>Gestión y desarrollo de landings informativas.</p>
+              <span class="badge-date">FEOE</span>
           </div>
-          <div class="job-item">
-            <h3>C.E.PER Occidente</h3>
-            <p class="role">Desarrollo de sitio web corporativo en Wordpress.</p>
+          <div class="edu-item">
+              <h3>C.E.PER Occidente</h3>
+              <p>Desarrollo de sitio web corporativo en Wordpress.</p>
+              <span class="badge-date">FCT</span>
           </div>
         </article>
 
         <article class="card">
           <h2>Formación Académica</h2>
           <div class="edu-item">
-            <h3>Grado Superior ASIR</h3>
-            <p>IES Gran Capitán | Actualmente</p>
+              <h3>Grado Superior ASIR</h3>
+              <p>IES Gran Capitán</p>
+              <span class="badge-date">Actualmente</span>
           </div>
           <div class="edu-item">
-            <h3>Grado Medio SMR</h3>
-            <p>IES Medina Azahara | 2023-2025</p>
+              <h3>Grado Medio SMR</h3>
+              <p>IES Medina Azahara</p>
+              <span class="badge-date">2023 - 2025</span>
           </div>
         </article>
       </section>
@@ -60,18 +67,19 @@
         <div class="card">
           <h2>Habilidades</h2>
           <ul class="skill-list">
-            <li>HTML/CSS</li>
-            <li>VirtualBox</li>
-            <li>Packet Tracer</li>
-            <li>WordPress</li>
-            <li>AWS</li>
+            <li>Flexible</li>
+            <li>Atenta</li>
+            <li>Receptiva</li>
+            <li>Creativa</li>
+            <li>Iniciativa</li>
+            <li>Trabajo en equipo</li>
           </ul>
         </div>
 
         <div class="card">
           <h2>Idiomas</h2>
           <p><strong>Español:</strong> Nativo</p>
-          <p><strong>Inglés:</strong> B2</p>
+          <p><strong>Inglés:</strong> A2</p>
         </div>
       </aside>
 
@@ -80,8 +88,10 @@
             <a href="#">LinkedIn</a>
             <a href="#">Portfolio</a>
         </div>
-        <p>&copy; 2026 Lucía Salazar - Currículum Profesional</p>
+        <p>&copy; 2026 Lucía Salazar - Currículum Vitae</p>
       </footer>
     </div> 
+
+    <script src="javascript.js"></script>
 </body>
 </html>
